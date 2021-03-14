@@ -14,8 +14,38 @@ $(document).ready(function () {
     })
 
 //current time
+    function timeTracker() {
+        var timeNow= moment().hour();
 
 //check time blocks to add background colors
+        $(".time-block").each(function() {
+            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+
+            //Past
+            if(blockTime <timeNow){
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+                $(this).addClass("past");
+            }
+
+            else if (blockTime === timeNow){
+                $(this).removeClass("future");
+                $(this).addClass("present");
+                $(this).removeClass("past");
+            }
+
+            else {
+                $(this).addClass("future");
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+            }
+
+
+        })
+    }
+
+    timeTracker ();      
 
 //get item from local storage
+
 })
