@@ -30,14 +30,14 @@ $(document).ready(function () {
 
             else if (blockTime === timeNow){
                 $(this).removeClass("future");
-                $(this).addClass("present");
                 $(this).removeClass("past");
+                $(this).addClass("present");
             }
 
             else {
-                $(this).addClass("future");
                 $(this).removeClass("present");
                 $(this).removeClass("past");
+                $(this).addClass("future");
             }
 
 
