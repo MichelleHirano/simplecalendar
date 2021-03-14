@@ -2,7 +2,12 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+var plannerContent= [];
+var getLocalStorageData = JSON.parse(localStorage.getItem("description"));
 
+if(getLocalStorageData !== null){
+    plannerContent = getLocalStorageData;
+}
 
 //Save Function 
     $(".saveBtn").on("click", function() {
@@ -43,15 +48,12 @@ $("#currentDay").html(todayDate);
 
         })
     }
-     
+ 
+    
 
-//get item from local storage
-window.onload = function() {
 
-    var loadSave = localStorage.getItem(".description");
-    if ("description" !== null) $('#hour9').val("hour9");
 
-}
+
 
 timeTracker();
 
