@@ -21,4 +21,4 @@ Link to deployed application: https://michellehirano.github.io/simplecalendar/
 
 
 Deployed application should look like:
-![Alt text](
+![alt text](https://github.com/MichelleHirano/simplecalendar/blob/68ff5a007f684ce71cc0c154fc9b4864ff7e7f2b/assets/Simple%20Calendar.png)
