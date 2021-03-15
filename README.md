@@ -16,3 +16,9 @@ WHEN I refresh the page
 THEN the saved events persist
 
 This code was made using Visual Studio Code by Michelle Hirano
+
+Link to deployed application: https://michellehirano.github.io/simplecalendar/
+
+
+Deployed application should look like:
+![Alt text](
